@@ -12,24 +12,23 @@ int main() {
 
   //create the Bridges object, set credentials
   Bridges bridges(1, "knguyen159", "54380843058");
-
   bridges.setTitle("List IMDB");
 
   // TODO:  access the IMDB dataset - use the data source object within BRIDGES and call
   // its getActorMovieIMDBData() method
   // this will return a list (vector) of actor-movie objects of type
   // ActorMovieIMDB - refer to the docs for that object and its attributes
+  
   DataSource ds (&bridges);
   vector<ActorMovieIMDB> actor_list = ds.getActorMovieIMDBData(1814);
   
 
-
   // TODO: build a linked list, using singly linked list elements, SLElement<ActorMovieIMDB>
   // where the actormovie object is a generic parameter that
-
   // iterate through the vector and put each of the actor movie names into the label
   // field of the SLelement (using the setLabel() method of the element) -
-  //  this will show up in the visualization when you do a moouse  over the node
+  //  this will show up in the visualization when you do a mouse over the node
+ 
   SLelement<ActorMovieIMDB> *head = nullptr;
 
   for (int i = 0; i < actor_list.size(); i++ ) {
@@ -56,7 +55,7 @@ int main() {
 
   //free the list as you have created dynamic memory
   for (int i = 0; i < actor_list.size()-1; ++i) {
-    //SLelement<ActorMovieIMDB>* nextnextNode = head->getNext()->getNext();
+    // SLelement<ActorMovieIMDB>* nextnextNode = head->getNext()->getNext();
     SLelement<ActorMovieIMDB>* nextNode;
     nextNode = head->getNext();
     delete head;
