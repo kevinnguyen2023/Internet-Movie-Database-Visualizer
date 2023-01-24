@@ -1,5 +1,5 @@
 # Internet-Movie-Database-Visualizer
-Developed a linked list that accesses datasets of actor movie data to build a visualization in C++. Added an API (Application Programming Interface) key to access actor movie IMDB data integrated into the visualization nodes. Created dynamic memory to allocate the linked list actor movie database.     
+Developed a linked list that accesses datasets of actor movie data to build a visualization in C++. Added an API (Application Programming Interface) key to access actor movie IMDB data integrated into the visualization nodes. Created dynamic memory to allocate the linked list actor movie database for program efficiency. It retrieves and parses the movie actor database by formatting a list of actor movie IMDB objects.         
 
 # Visualization Output
 <img width="1397" alt="IMDB Visualizer Part 1" src="https://user-images.githubusercontent.com/79876261/213918527-ea1b0dec-efa0-4209-be41-404ad7dc4a47.png">
